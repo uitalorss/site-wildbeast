@@ -15,12 +15,13 @@ h1 {
 }
 
 img {
+  display: block;
   max-width: 100%;
+  border-radius: 5px;
 }
 
-.animal-sidebar,
-.ads {
-  max-width: 100px;
+.foto-anuncio {
+  max-width: 240px;
 }
 
 .logo {
@@ -95,16 +96,31 @@ img {
   background: #b07dfb;
 }
 
+/* Content */
 .content {
   grid-area: content;
 }
 
+/* Anuncios */
 .anuncios {
   grid-area: anuncios;
+  background: #fafbfc;
+  display: grid;
+  align-content: start;
+  padding: 30px;
+  gap: 30px;
 }
 
+/* Footer */
 .footer {
   grid-area: footer;
+  background-image: linear-gradient(135deg, #8945ee, #ae7afa);
+}
+
+.footer p {
+  color: #ffffff;
+  text-align: center;
+  padding: 30px;
 }
 
 /* navbar */
